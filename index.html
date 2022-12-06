@@ -1,53 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 1</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Welcome to Shaw's Website</title>
 </head>
-
-
 <body>
-    <header>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="ervaring.html">Experience</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="lastsummer.html">Last Summer</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-    </header>
-
-    <div>
-        <h1>Shawqy Schenkels</h1>
-        <img class = "img_center" src="./img/me.jpg">
-        <h3 class = "subtitle_index">About</h3>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Shaw's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">My CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ervaring.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobby.html">Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lastsummer.html">Last Summer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div>
-        <p class = "text_center">I’m Shawqy Schenkels a student in ThomasMore Geel. Currently I am
-            studying programming however I have past experience. I started
-            programming in highschool where I received my degree in Networking & IT.
-            On this website u will find more info about me such as my working
-            experience, hobby’s and much more info about me.</p>
-    </div><br><br><br>
+    <!-- Hero Section -->
+    <section class="jumbotron text-center">
+        <div class="container">
+        <h1 class="jumbotron-heading">Mijn portfolio</h1>
+        <p class="lead text-muted">Op deze website kan je meer info over mij vinden.</p>
+        </div>
+    </section>
 
-    <div>
-        <h3 class="subtitle_index">Do you want to know more about me, visit these pages!</h3>
-        <a class="refnow" href="cv.html">My CV</a><br>
-        <a class="refnow" href="ervaring.html">Experience</a><br>
-        <a class="refnow" href="hobby.html">Hobby</a><br>
-        <a  class="refnow"href="lastsummer.html">Last Summer</a><br>
-        <a  class="refnow"href="contact.html">Contact</a><br>
+    <!-- Three Column Section -->
+    <section class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="img/me.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">My CV</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="cv.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="img/unikoo.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Experience</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="ervaring.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/seoul.jpg" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">Hobby</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    <a href="hobby.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">&copy; Shaw's Website</small>
+        </div>
+        <div class="col-6 col-md">
+        <h5>Social Media</h5>
+        <ul class="list-unstyled text-small">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+        </div>
     </div>
-
-    <footer>
-
     </footer>
-
 </body>
 </html>
+        
+  

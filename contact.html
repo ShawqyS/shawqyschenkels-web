@@ -5,31 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Project 1</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contactstyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 
-<body>
+<body style="background-color: darkgrey;">
     <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="ervaring.html">Experiences</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="lastsummer.html">Last Summer</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-    </header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">Shaw's Website</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">My CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ervaring.html">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hobby.html">Hobby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lastsummer.html">Last Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+      </header>
 
-    <form class="form">
+    <form class="form" style="height: 710px;">
         <h2>CONTACT ME</h2>
-        <p type="Name:"><input placeholder="Name & Lastname"></input></p>
-        <p type="Email:"><input placeholder="Your e-mail"></input></p>
-        <p type="Subject:"><input placeholder="Subject"></input></p>
-        <p type="Message:"><input placeholder="What do you want to tell me?"></input></p>
+        <p type="Name:"><input placeholder="Name & Lastname" required></input></p>
+        <p type="Email:"><input type="email" name="email" id="email" placeholder="Your e-mail" required></input></p>
+        <label for="skills">Interesse in skills:</label><br>
+        <select id="skills" name="skills">
+        <option value="programmeren">Programmeren</option>
+        <option value="ontwerpen">Ontwerpen</option>
+        <option value="schrijven">Schrijven</option>
+        </select><br>
+        <label for="vraag">Vraag:</label><br>
+        <textarea id="vraag" name="vraag" rows="5" cols="35"></textarea><br><br>
         <button>Verstuur Bericht</button>
-        <a href="mailto:shawqy.schenkels@hotmail.be">Send Mail</a><br>
-        <a href="tel:+32468236779">Call</a>
+        <a href="mailto:shawqy.schenkels@hotmail.be">Stuur Mail</a><br>
+        <a href="tel:+32468236779">Bel</a>
       </form>
 
     <footer>
