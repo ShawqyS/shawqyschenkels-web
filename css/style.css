@@ -20,3 +20,50 @@ footer {
 }
 
 
+@media (max-width: 600px) {
+  /* styles for small screens */
+  .container {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    display: table-cell;
+  }
+}
+
+@media (max-width: 768px) {
+  /* styles for tablets */
+  .container {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    display: table-cell;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* styles for large screens */
+  .container {
+    width: 70%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    display: table-cell;
+  }
+}
+
+
+
